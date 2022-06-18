@@ -8,8 +8,8 @@ body{
 
 
 .wrapper-main{
-    background: url("/img/1.png") center top no-repeat,
-                url(./img/2.png) center bottom 165px no-repeat;
+    background: url("./img/1.png") center top no-repeat,
+                url("./img/2.png") center bottom 165px no-repeat;
 
 }
 
