@@ -1,0 +1,499 @@
+body{
+    background: #001821;
+    font: 16px/1.42 "Open Sans", "Helvetica", sans-serif;
+    color: #fff;
+    -webkit-font-smotthing: antialiased;
+    -moz-osx-font-smothing: grayscale;
+}
+
+
+.wrapper-main{
+    background: url("/img/1.png") center top no-repeat,
+                url(./img/2.png) center bottom 165px no-repeat;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1140px;
+}
+
+
+/* Header */
+.header__container{
+    position: relative;
+    height: 100px;
+    margin-bottom: 96px;
+}
+.logo{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 29px;
+}
+
+.menu{
+    position: absolute;
+    top: 38px;
+    left: 166px;
+}
+
+.menu__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.menu__item:last-child{
+    margin-right: 0;
+}
+
+.menu__link{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    color: #DA0100;
+}
+
+.menu__item--active .menu__link{
+    color:#DA0100;
+}
+
+.contacts{
+    position: absolute;
+    top: 26px;
+    right: 0;
+    font-style: normal;
+    text-align: right;
+}
+
+.contacts__phone{
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    
+}
+
+.contacts__shedule{
+    font-size: 13px;    
+    text-decoration-line: underline;
+    color: #98A4A8;
+    margin-top: -5.5px;
+}
+
+.contacts__shedule:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.popup__shedule{
+    font-weight: 700;
+}
+
+.hero{
+    width: 520px;
+    min-height: 333px;
+    margin-bottom: 246px;
+}
+
+.hero__title{
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.38;
+    margin-bottom: 25px;
+}
+
+.hero__subtitle{
+    font-size: 18px;
+    margin-bottom: 29px;
+}
+
+.button{
+    display: inline-block;
+    height: 55px;
+    padding: 18px 40px;
+    background-color: red;
+    border-radius: 35px;
+    color: #fff;
+    font-size: 14px; 
+    font-weight: bold;  
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button--red--hover:hover{
+    background:  #DA0100;
+    box-shadow: 0px 2px 4px rgba(218, 1, 0, 0.3);
+}
+
+/* Tours */
+h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.tours{
+    margin-bottom: 127px;
+}
+
+.tours__title{
+    margin-bottom: 50px;
+}
+
+.tours__title::after{
+    content: url(./img/flame.png);
+    width: 21px;
+    margin-left: 12px;
+}
+
+.tours__block{
+    min-height: 449px;
+}
+
+.tours__list{
+    position: relative;
+}
+
+.tours__item{
+    min-height: 449px;
+    width: 362px;
+    background: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 22px;
+}
+
+.tours__item:last-child{
+    margin-right: 0;
+}
+
+.tours__image{
+    min-height: 144px;
+}
+
+.tours__desc{
+    padding: 26px 23px;
+}
+
+.tours__name{
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.tours-desc__item{
+    display: inline-block;
+    color: #606060;
+    margin-right: 23px;
+    margin-bottom: 23.5px;
+}
+
+.tours-desc__item:last-child{
+    margin-right: 0;
+}
+
+.meal::before{
+    content: url(./img/meal.png);
+    width: 36px;
+    margin-right: 5px;
+    position: relative;
+    bottom: -7px;
+}
+
+.calendar::before{
+    content: url(./img/calendar.png);
+    width: 36px;
+    margin:0 6px 0 7px;
+    position: relative;
+    bottom: -7px;
+}
+
+.tours__about{
+    color: #303030;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24.5px;
+}
+
+.tours__button{
+    padding: 18px 30px;
+}
+
+.button--color--white{
+    background: #fff;
+    border: 1px solid #F5170E;
+    color: #F5170E;
+}
+
+.button--color--white:hover{
+    background: #F5170E;
+    color: #fff;
+}
+
+/* News */
+.news{
+    margin-bottom: 145px;
+}
+.news__title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 51px;
+}
+
+.news__list{
+    margin-bottom: 52px;
+}
+
+.news__item{
+    display: inline-block;
+    width: 557px;
+    vertical-align: top;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.news__item:last-child{
+    margin-right: 0;
+}
+
+.news__img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.news__content{
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 30px;
+    min-height: 120.5px;
+}
+
+.news__date{
+    font-size: 14px;
+    margin: 0 0 12.5px 0;
+}
+
+.news__subtitle{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.news__description{
+    height: 55px;
+    line-height: 1.5;
+    vertical-align: middle;
+    font-size: 16px;
+    margin: 0;
+}
+
+.pagination{
+    text-align: center;
+    /* margin-left: 20px; если центрировать этот блок по дизайну, то придется сдвинуть влево,
+    но скорее всего - погрешность в дизайне */
+}
+
+.pagination__range,.pagination__list{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pagination__range{
+    margin-right: 20px;
+}
+
+.pagination__item{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pagination__item--active .pagination__link{
+    background: #fff;
+    line-height: 32px;
+    color: #F5170E;
+}
+
+.pagination__link{
+    line-height: 32px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* About */
+
+.about{
+    margin-bottom: 53px;
+}
+
+.about:before,.about__content{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about:before{
+    content: "";
+    width: 490px;
+    height: 505px;
+    background: url("./img/gates.png") center center/cover no-repeat;
+
+}
+
+.about__content{
+    background: url("./img/mountains.png") center center/cover no-repeat;
+    border-radius: 5px;
+    padding: 70px 81px 65px;
+    width: 785px;
+    min-height: 455px;
+    margin-left: 354px;
+    margin-top: -408px;
+}
+
+.about__title{
+    color: #000;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 37px;
+}
+
+.about__text{
+    color: #060606;
+    line-height: 1.7;
+    max-width: 502px;
+}
+
+.about__text p{
+    margin-bottom: 20px;
+}
+
+.about__text p:last-child{
+    margin-bottom: 40px;
+}
+
+/* Footer */
+.footer{
+    position: relative;
+    height: 93px;
+    margin-bottom: 57px;
+    border-top: 1px solid rgba(255, 255, 255, .1);    
+}
+
+.footer__logo{
+    top: 45px;
+}
+
+.footer__menu{
+    top: 57px;
+}
+
+.social__link{
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    background: center center no-repeat;
+}
+
+.social{
+    position: absolute;
+    top: 49px;
+    right: 266px;
+}
+
+.social__item{
+    display: inline-block;
+    vertical-align: middle;    
+    margin-right: 8px;
+    margin-left: -5px;
+    /* знаю, что нежелательно использовать отрицательный margin,
+    но не знала, как эти отсутпы у inline-block победить */
+}
+
+.social__item:last-child{
+    margin-right: 0;
+}
+
+.social__item--telegram .social__link{
+    background-image: url(./img/telegram.png);    
+} 
+
+.social__item--telegram .social__link:hover{
+    background-image: url(./img/tg-hover.png);    
+}
+
+.social__item--vk .social__link{
+    background-image: url(./img/vk.png);    
+} 
+
+.social__item--vk .social__link:hover{
+    background-image: url(./img/vk-hover.png);    
+}
+.social__item--fb .social__link{
+    background-image: url(./img/fb.png);    
+} 
+
+.social__item--fb .social__link:hover{
+    background-image: url(./img/fb-hover.png);    
+}
+.social__item--inst .social__link{
+    background-image: url(./img/in.png);    
+} 
+
+.social__item--inst .social__link:hover{
+    background-image: url(./img/inst-hover.png);    
+}
+
+.footer-contacts{
+    top: 45px;
+}
+.footer-contacts__title{
+    font-size: 11px;
+    color: #9A9A9A;
+}
+.footer-container__content{
+    border-top: 1px solid rgba(255, 255, 255, .1); 
+}
