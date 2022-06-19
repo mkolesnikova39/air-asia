@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6{
 /* Header */
 .header__container{
     position: relative;
-    height: 100px;
+    min-height: 100px;
     margin-bottom: 96px;
 }
 .logo{
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6{
 
 .button{
     display: inline-block;
-    height: 55px;
+    min-height: 55px;
     padding: 18px 40px;
     background-color: red;
     border-radius: 35px;
@@ -320,7 +320,7 @@ h2{
 }
 
 .news__description{
-    height: 55px;
+    min-height: 55px;
     line-height: 1.5;
     vertical-align: middle;
     font-size: 16px;
@@ -358,6 +358,8 @@ h2{
     display: block;
     width: 32px;
     height: 32px;
+    /* Думаю, что здесь контента много быть не может
+    и допустимо оставить параметры статичными? */
     border-radius: 50%;
     font-weight: bold;
     text-decoration: none;
@@ -377,8 +379,8 @@ h2{
 
 .about:before{
     content: "";
-    width: 490px;
-    height: 505px;
+    min-width: 490px;
+    min-height: 505px;
     background: url("./img/gates.png") center center/cover no-repeat;
 
 }
@@ -387,7 +389,7 @@ h2{
     background: url("./img/mountains.png") center center/cover no-repeat;
     border-radius: 5px;
     padding: 70px 81px 65px;
-    width: 785px;
+    min-width: 785px;
     min-height: 455px;
     margin-left: 354px;
     margin-top: -408px;
@@ -417,7 +419,7 @@ h2{
 /* Footer */
 .footer{
     position: relative;
-    height: 93px;
+    min-height: 93px;
     margin-bottom: 57px;
     border-top: 1px solid rgba(255, 255, 255, .1);    
 }
