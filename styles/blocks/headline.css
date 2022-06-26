@@ -1,0 +1,20 @@
+.headline{
+    min-height: 412px;    
+    background: url('../../img/headline.png') top center/cover no-repeat;
+    padding-bottom: 24px;
+    margin-bottom: 71px;
+}
+
+.headline .container{    
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+.headline .header{
+    margin-bottom: 102px;
+}
+
+.headline .hero{
+    margin-bottom: 117px;
+}

@@ -1,0 +1,66 @@
+.news{
+    margin-bottom: 147px;
+}
+
+.news__title{
+    margin-bottom: 50px;
+}
+
+.news__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+
+.news__item{
+    height: 395px;
+    display: flex;
+    flex: 1;
+    margin-right: 2%;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    align-items: flex-end;
+}
+
+.news__item:last-child{
+    margin-right: 0;
+}
+.news__item:first-child{
+    background: url('../../img/plain.png') center center / cover no-repeat;
+}
+
+.news__item:last-child{
+    background: url('../../img/Surfer.png') center center / cover no-repeat;
+}
+
+.news__content{
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 30px;
+    min-height: 120.5px;   
+}
+
+.news__date{
+    font-size: 14px;
+    margin: 0 0 12.5px 0;
+}
+
+.news__subtitle{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+   
+}
+
+.news__description{
+    min-height: 55px;
+    line-height: 1.5;
+    vertical-align: middle;
+    font-size: 16px;
+    margin: 0;    
+}

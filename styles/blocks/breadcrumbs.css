@@ -1,0 +1,29 @@
+.breadcrumbs__list {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #9a9a9a;
+  }
+  
+  .breadcrumbs__link{
+    text-decoration-line: underline;
+  }
+
+  .breadcrumbs__item{
+    display: flex;
+    align-items: center;
+  }
+  .breadcrumbs__item::after {
+    content: "/";
+    color: #9a9a9a;
+    display: inline-block;
+    padding: 0 5px;
+  }
+  
+  .breadcrumbs__item:last-child:after {
+    content: "";
+  }
+   
+  .breadcrumbs__item--active {
+    font-weight: 700;
+  }

@@ -1,0 +1,35 @@
+.contacts{
+    font-style: normal;
+    text-align: right;
+}
+
+.contacts__phone{
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    
+}
+
+.contacts__title{
+    font-size: 13px;    
+    text-decoration-line: underline;
+    color: #98A4A8;
+    margin-top: -5.5px;
+}
+
+.contacts__title:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.popup__shedule{
+    font-weight: 700;
+}
