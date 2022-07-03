@@ -1,0 +1,62 @@
+.wrapper--welcome{
+    background: url('../../img/shades.png') center center no-repeat, 
+                url(../../img/bg.png) center center/cover no-repeat;
+}
+
+.container__welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.welcome__animate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    opacity: 0;
+    animation: zoom .9s ease-in forwards;
+}
+
+.welcome__subtitle{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 52.5px;
+}
+
+.welcome__logo{
+    min-width: 279px;
+    margin-bottom: -3px;
+}
+
+.welcome__button{
+    padding-left: 58px;
+    padding-right: 58px;
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(.7);
+    }
+
+    20%{
+        transform: scale(1.15);
+    }
+
+    40%{
+        transform: scale(.9);
+    }
+
+    60%{
+        transform: scale(1.1);
+    }
+    80%{
+        transform: scale(.95);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

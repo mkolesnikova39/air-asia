@@ -1,3 +1,7 @@
+.page-content__main{
+    padding-top: 0;
+}
+
 .hero__container{
     display: flex;
     flex-direction: column;
@@ -5,6 +9,7 @@
     min-height: 333px;
     margin-bottom: 246px;
 }
+
 .hero__title{
     width: 45%;
     font-size: 72px;

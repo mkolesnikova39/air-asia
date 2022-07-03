@@ -7,13 +7,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 132px;
-    
+    min-height: 132px;    
 }
 
 .footer__col {
     display: flex;
     align-items: center;
+    padding-top: 10px;
 }
 
 .footer__col--align--right{
@@ -21,65 +21,150 @@
     justify-content: flex-end;
 }
 
-.social{
-    
+.social{    
     margin-right: 74px;
 }
 
 .social__list{
-    display: flex;
-    
-}
-.social__link{
-    
-    text-decoration: none;
-    width: 36px;
-    height: 36px;
-    
+    display: flex;    
 }
 
+.social__link{   
+    text-decoration: none;
+    width: 36px;
+    height: 36px;    
+}
 
 .social__item{
     display: flex;
+    position: relative;
     margin-right: 16px;
-    margin-left: -5px;
-    
+    margin-left: -5px;    
 }
 
 .social__item:last-child{
     margin-right: 0;
 }
 
-.social__item--telegram .social__link{
-    background: url('../../img/social/telegram.png');    
+.social__item--telegram .social__link::after{
+    content: "";
+    background: url('../../img/social/sprites.png') -122px -10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
 } 
 
-.social__item--telegram .social__link:hover{
-    background: url('../../img/social/tg-hover.png');    
+.social__item--telegram .social__link::before{
+    content: "";
+    background: url('../../img/social/sprites.png') -122px -66px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
 }
 
-.social__item--vk .social__link{
-    background-image: url('../../img/social/vk.png');    
+.social__item--telegram .social__link:hover::after{
+    opacity: 0;
+}
+
+.social__item--telegram .social__link:hover::before{
+    opacity: 1;   
+}
+
+.social__item--vk .social__link::after{
+    content: "";
+    background: url('../../img/social/sprites.png') -10px -122px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
 } 
 
-.social__item--vk .social__link:hover{
-    background-image: url('../../img/social/vk-hover.png');    
+.social__item--vk .social__link::before{
+    content: "";
+    background: url('../../img/social/sprites.png') -66px -122px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
 }
-.social__item--fb .social__link{
-    background-image: url('../../img/social/fb.png');    
+
+.social__item--vk .social__link:hover::after{
+    opacity: 0;
+}
+
+.social__item--vk .social__link:hover::before{
+    opacity: 1;   
+}
+
+.social__item--fb .social__link::after{
+    content: "";
+    background: url('../../img/social/sprites.png') -10px -10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
 } 
 
-.social__item--fb .social__link:hover{
-    background-image: url('../../img/social/fb-hover.png');    
+.social__item--fb .social__link::before{
+    content: "";
+    background: url('../../img/social/sprites.png') -10px -66px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
 }
-.social__item--inst .social__link{
-    background-image: url('../../img/social/in.png');    
+
+.social__item--fb .social__link:hover::after{
+    opacity: 0;
+}
+
+.social__item--fb .social__link:hover::before{
+    opacity: 1;   
+}
+
+.social__item--inst .social__link::after{
+    content: "";
+    background: url('../../img/social/sprites.png') -66px -10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
 } 
 
-.social__item--inst .social__link:hover{
-    background-image: url('../../img/social/inst-hover.png');    
+.social__item--inst .social__link::before{
+    content: "";
+    background: url('../../img/social/sprites.png') -66px -66px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
 }
 
+.social__item--inst .social__link:hover::after{
+    opacity: 0;
+}
+
+.social__item--inst .social__link:hover::before{
+    opacity: 1;   
+}
 
 .footer-contacts__title{
     font-size: 11px;

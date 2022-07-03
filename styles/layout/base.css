@@ -70,10 +70,26 @@ h2{
 .title--white{
     color: #fff;
 }
+
+.title--size--48{
+    font-size: 48px;
+}
+
 p{
     display: block;
     padding: 0;
     margin: 0;
+}
+
+.text--gray--16{
+    color: #818181;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.date{
+    font-size: 14px;
+    font-weight: 400;    
 }
 
 a{
@@ -95,7 +111,13 @@ img{
     max-width: 100%;
 }
 
+textarea{
+    width: 100%;
+    resize: none;
+}
 
-
+.page-content{
+    padding-top: 98px;
+}
 
 

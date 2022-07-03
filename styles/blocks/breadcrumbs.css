@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
   }
+  
   .breadcrumbs__item::after {
     content: "/";
     color: #9a9a9a;

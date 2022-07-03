@@ -1,9 +1,11 @@
 .logo{
     margin-right: 78px;
+    width: 85px;
+    height: 36px;
 }
 
 .logo__services{
-    margin-right: 66px;    
+    margin-right: 73px;    
 }
 
 .logo__services .logo__image{   

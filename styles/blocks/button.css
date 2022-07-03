@@ -8,12 +8,14 @@
     font-size: 14px; 
     font-weight: bold;  
     text-transform: uppercase;
+    border: none;
     text-decoration: none;
 }
 
 .button--red--hover:hover{
     background:  #DA0100;
     box-shadow: 0px 2px 4px rgba(218, 1, 0, 0.3);
+    transition: .5s;
 }
 
 .button--color--white{
@@ -25,4 +27,17 @@
 .button--color--white:hover{
     background: #F5170E;
     color: #fff;
+    transition: .5s;
+}
+
+.button--color--black{
+    background: #8E8E8E;
+    color: #fff;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.button--color--black:hover{
+    background: #2B2B2B;
+    transition: .5s;
 }
